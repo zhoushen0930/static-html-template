@@ -1,4 +1,220 @@
-<h1>This is my homepage</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zhou Shen | Links</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
 
-<h2>My Link in bio</h2>
+  <style>
+    html {
+      min-height: 100%;
+    }
 
+    body {
+      min-height: 100%;
+      background-image: url("fbc80bb6c306e7a49b58613ba53e0677.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-family: "Trebuchet MS", "Verdana", sans-serif;
+      color: white;
+      margin: 0;
+      padding: 40px 20px;
+      box-sizing: border-box;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .page-wrapper {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 36px 28px 40px 28px;
+      text-align: center;
+      background-color: rgba(25, 25, 25, 0.35);
+      border-radius: 24px;
+      border: 1.5px solid rgba(225, 225, 225, 0.35);
+      box-shadow: 0 0 18px rgba(230, 230, 230, 0.18);
+    }
+
+    .profile-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+
+    .profile-photo {
+      width: 280px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 18px;
+      margin-bottom: 22px;
+    }
+
+    .name {
+      font-size: 30px;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 22px;
+      display: inline-block;
+      padding: 12px 30px;
+      border: 1.5px solid rgba(231, 199, 106, 0.45);
+      border-radius: 16px;
+      background-color: rgba(255, 255, 255, 0.06);
+      box-shadow: 0 0 16px rgba(231, 199, 106, 0.10);
+      letter-spacing: 1px;
+    }
+
+    .description {
+      font-family: "Georgia", "Times New Roman", serif;
+      font-size: 25px;
+      line-height: 1.65;
+      margin: 0;
+      color: #e6c76a;
+      font-weight: 600;
+      font-style: italic;
+      letter-spacing: 0.5px;
+      text-align: center;
+      max-width: 650px;
+    }
+
+    .contact-section {
+      margin-top: 40px;
+      margin-bottom: 34px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 28px;
+      font-size: 24px;
+    }
+
+    .contact-section a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .contact-section a:hover {
+      opacity: 0.8;
+      transform: translateY(-2px);
+    }
+
+    .link-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+    }
+
+    .link-card {
+      width: 100%;
+      background-color: rgba(20, 20, 20, 0.45);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      border-radius: 16px;
+      padding: 0;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.06);
+    }
+
+    .link-card a {
+      width: 100%;
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      font-weight: 700;
+      padding: 18px 20px;
+      text-align: center;
+    }
+
+    .link-card a:hover {
+      opacity: 0.85;
+    }
+
+    @media (max-width: 768px) {
+      .page-wrapper {
+        padding: 28px 20px 32px 20px;
+      }
+
+      .profile-photo {
+        width: 230px;
+      }
+
+      .name {
+        font-size: 34px;
+        padding: 10px 24px;
+      }
+
+      .description {
+        font-size: 28px;
+      }
+
+      .contact-section {
+        font-size: 22px;
+        gap: 18px;
+      }
+
+      .link-card a {
+        font-size: 20px;
+        min-height: 66px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <div class="profile-section">
+      <img class="profile-photo" src="截屏2026-03-27 下午11.50.56.png" alt="Zhou Shen headshot">
+
+      <div class="name">Zhou Shen</div>
+
+      <div class="description">
+        ✨At the crossroads of finance, code, and design, I build things with clarity and character.🪐
+      </div>
+    </div>
+
+    <div class="contact-section">
+      <a href="https://www.linkedin.com/in/katherine-shen-9b7126247/" target="_blank" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://www.instagram.com/iamshenzz/" target="_blank" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="mailto:zhoushen0930@email.com" aria-label="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+    </div>
+
+    <div class="link-list">
+      <div class="link-card">
+        <a href="#">🙋 About Me</a>
+      </div>
+
+      <div class="link-card">
+        <a href="#">📄 My Resume</a>
+      </div>
+
+      <div class="link-card">
+        <a href="#">💻 Projects</a>
+      </div>
+
+      <div class="link-card">
+        <a href="#">🌟 Career Interests</a>
+      </div>
+
+      <div class="link-card">
+        <a href="#">😊 Blog</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
