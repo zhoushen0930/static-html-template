@@ -30,7 +30,7 @@
     }
 
     .page-wrapper {
-      max-width: 760px;
+      max-width: 860px;
       margin: 0 auto;
       padding: 36px 28px 40px 28px;
       text-align: center;
@@ -119,6 +119,11 @@
       border-radius: 16px;
       padding: 0;
       box-shadow: 0 0 10px rgba(255, 255, 255, 0.06);
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .link-card:hover {
+      transform: translateY(-2px);
     }
 
     .link-card a {
@@ -200,8 +205,8 @@
       </div>
 
       <div class="link-card">
-  <a href="resume.pdf" target="_blank">📄 My Resume</a>
-</div>
+        <a href="resume.pdf" target="_blank">📄 My Resume</a>
+      </div>
 
       <div class="link-card">
         <a href="projects.html">💻 Projects</a>

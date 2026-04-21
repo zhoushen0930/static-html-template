@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zhou Shen | Projects</title>
+
+  <style>
+    html {
+      min-height: 100%;
+    }
+
+    body {
+      min-height: 100%;
+      margin: 0;
+      padding: 40px 20px;
+      box-sizing: border-box;
+      font-family: "Trebuchet MS", "Verdana", sans-serif;
+      color: white;
+      background-image: url("fbc80bb6c306e7a49b58613ba53e0677.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .page-wrapper {
+      max-width: 980px;
+      margin: 0 auto;
+      background-color: rgba(25, 25, 25, 0.40);
+      border-radius: 24px;
+      border: 1.5px solid rgba(225, 225, 225, 0.35);
+      box-shadow: 0 0 18px rgba(230, 230, 230, 0.18);
+      padding: 36px 28px 40px 28px;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+
+    .page-title {
+      font-size: 34px;
+      font-weight: 700;
+      margin: 0;
+      color: #ffffff;
+      letter-spacing: 0.5px;
+    }
+
+    .back-link {
+      text-decoration: none;
+      color: #e6c76a;
+      font-weight: 700;
+      border: 1px solid rgba(230, 199, 106, 0.5);
+      padding: 10px 16px;
+      border-radius: 12px;
+      background-color: rgba(255, 255, 255, 0.05);
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .back-link:hover {
+      opacity: 0.85;
+      transform: translateY(-2px);
+    }
+
+    .intro-text {
+      margin: 0 0 28px 0;
+      font-size: 18px;
+      line-height: 1.75;
+      color: #f2f2f2;
+    }
+
+    .project-list {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    .project-card {
+      background-color: rgba(20, 20, 20, 0.52);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 18px;
+      padding: 24px;
+      text-align: left;
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 16px rgba(255, 255, 255, 0.10);
+    }
+
+    .project-title {
+      margin: 0 0 10px 0;
+      font-size: 28px;
+      color: #e6c76a;
+      line-height: 1.3;
+    }
+
+    .project-subtitle {
+      margin: 0 0 16px 0;
+      font-size: 15px;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.78);
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+
+    .project-description {
+      margin: 0 0 18px 0;
+      font-size: 17px;
+      line-height: 1.8;
+      color: #f5f5f5;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 8px;
+    }
+
+    .project-button {
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      background-color: rgba(230, 199, 106, 0.18);
+      border: 1px solid rgba(230, 199, 106, 0.55);
+      padding: 12px 18px;
+      border-radius: 12px;
+      font-weight: 700;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .project-button:hover {
+      opacity: 0.85;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      .page-wrapper {
+        padding: 28px 20px 32px 20px;
+      }
+
+      .page-title {
+        font-size: 28px;
+      }
+
+      .project-title {
+        font-size: 24px;
+      }
+
+      .project-description {
+        font-size: 16px;
+      }
+
+      .intro-text {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <div class="top-bar">
+      <h1 class="page-title">Projects</h1>
+      <a class="back-link" href="index.html">← Back to Home</a>
+    </div>
+
+    <p class="intro-text">
+      These projects reflect my interests across finance, markets, digital assets, and data-driven analysis.
+      They include coursework, research-based presentations, and applied analytical work built through both
+      individual and team projects.
+    </p>
+
+    <div class="project-list">
+
+      <div class="project-card">
+        <h2 class="project-title">Oil Futures Market Analysis</h2>
+        <p class="project-subtitle">Finance · Derivatives · Market Structure</p>
+        <p class="project-description">
+          This project analyzes the payoff structure, trading venues, and market characteristics of oil futures,
+          with a focus on major benchmarks such as WTI and Brent. It explores how oil futures function as both
+          pricing tools and risk-management instruments in global energy markets.
+        </p>
+        <div class="button-row">
+          <a class="project-button" href="Oil futures.pdf" target="_blank">Open Project PDF</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h2 class="project-title">High-Quality Earnings Momentum</h2>
+        <p class="project-subtitle">Quantitative Portfolio Management · Equity Strategy</p>
+        <p class="project-description">
+          This group project studies a long-short equity strategy built around earnings surprise, profitability,
+          and asset growth. The idea is to test whether the market underreacts more strongly when firms combine
+          high-quality earnings with conservative growth, and whether that interaction can generate persistent alpha.
+        </p>
+        <div class="button-row">
+          <a class="project-button" href="12_Group_12_StickyQuality_FINAL.pdf" target="_blank">Open Project PDF</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h2 class="project-title">CBDC vs. Private Stablecoin</h2>
+        <p class="project-subtitle">Digital Assets · Monetary Systems · Policy Analysis</p>
+        <p class="project-description">
+          This presentation compares central bank digital currencies and private stablecoins through a U.S.-focused lens.
+          It examines their differences as forms of public and private money, compares cross-country developments in the
+          U.S., Europe, and China, and discusses why the U.S. may remain more supportive of stablecoins than CBDCs in the near term.
+        </p>
+        <div class="button-row">
+          <a class="project-button" href="Group 3 v5(1).pptx" target="_blank">Open Slides</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h2 class="project-title">Financial Analytics Final Project</h2>
+        <p class="project-subtitle">Python · Machine Learning · Empirical Finance</p>
+        <p class="project-description">
+          This notebook-based final project brings together several topics in financial analytics, including CAPM estimation,
+          principal component regression, macroeconomic prediction, image classification, and return prediction. It reflects
+          my experience using Python to combine statistical modeling, machine learning, and financial data analysis in one project.
+        </p>
+        <div class="button-row">
+          <a class="project-button" href="Final Project Zhou Shen-1.ipynb" target="_blank">Open Notebook</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

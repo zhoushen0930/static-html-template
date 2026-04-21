@@ -25,7 +25,7 @@
 
     .page-wrapper {
       max-width: 850px;
-      margin: 0 auto;
+      margin: 0 230px 0 auto;
       background-color: rgba(25, 25, 25, 0.45);
       border-radius: 24px;
       padding: 40px 32px;
@@ -33,6 +33,18 @@
       box-shadow: 0 0 18px rgba(230, 230, 230, 0.18);
       position: relative;
       z-index: 2;
+    }
+
+    .left-photo {
+      position: fixed;
+      top: 95px;
+      left: 30px;
+      width: 280px;
+      height: auto;
+      border-radius: 20px;
+      z-index: 1;
+      pointer-events: none;
+      box-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
     }
 
     .umich-logo {
@@ -78,6 +90,36 @@
       text-align: left;
     }
 
+    .skills-block {
+      margin-top: 42px;
+      margin-bottom: 10px;
+    }
+
+    .skills-block h2 {
+      margin-bottom: 20px;
+      text-align: left;
+      color: #e6c76a;
+      font-size: 28px;
+    }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px 18px;
+    }
+
+    .skills-grid span {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 999px;
+      background-color: rgba(20, 20, 20, 0.78);
+      border: 1px solid rgba(230, 199, 106, 0.45);
+      color: #f0d98a;
+      font-size: 15px;
+      font-weight: 700;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.22);
+    }
+
     .back {
       text-align: center;
       margin-top: 34px;
@@ -95,8 +137,21 @@
     }
 
     @media (max-width: 768px) {
+      body {
+        padding: 24px 12px;
+      }
+
       .page-wrapper {
+        max-width: 100%;
+        margin: 0 auto;
         padding: 28px 20px;
+      }
+
+      .left-photo {
+        width: 135px;
+        top: 110px;
+        left: 8px;
+        border-radius: 14px;
       }
 
       .umich-logo {
@@ -119,14 +174,28 @@
         font-size: 24px;
       }
 
+      .skills-block h2 {
+        font-size: 24px;
+      }
+
       p {
         font-size: 17px;
+      }
+
+      .skills-grid {
+        gap: 12px 12px;
+      }
+
+      .skills-grid span {
+        font-size: 14px;
+        padding: 10px 18px;
       }
     }
   </style>
 </head>
 
 <body>
+  <img class="left-photo" src="662612cf9ba226e31f24e16974a08f45.jpg" alt="Zhou Shen graduation photo">
   <img class="umich-logo" src="Seal_of_the_University_of_Michigan.svg" alt="University of Michigan logo">
   <img class="uchicago-logo" src="uchicago logo.png" alt="University of Chicago logo">
 
@@ -134,12 +203,11 @@
     <h1>About Me</h1>
 
     <p>
-      Hi, I’m Zhou Shen — a curious and driven thinker at the intersection of finance, strategy, and communication.
-      I am currently a Master of Finance student at the University of Chicago Booth School of Business. I earned my Economics degree from the University of Michigan, and before that, I studied Accounting and Marketing, which gave me an early foundation in both business analysis and consumer understanding.
+      Hi, I’m Zhou Shen — a curious and driven thinker at the intersection of finance, strategy, and communication. I am currently a Master of Finance student at the University of Chicago Booth School of Business. I earned my Economics degree from the University of Michigan, and before that, I studied Accounting and Marketing, which gave me an early foundation in both business analysis and consumer understanding.
     </p>
 
     <p>
-      I am especially interested in consulting because I enjoy solving problems, working with different people, and turning analysis into practical ideas. I am drawn to environments where I can learn quickly, think in a structured way, and contribute to real business decisions.
+      I am interested in consulting as I enjoy solving problems, working with different people, and turning analysis into practical ideas. I am drawn to environments where I can learn quickly, think in a structured way, and contribute to real business decisions.
     </p>
 
     <h2>💼 Professional Experiences</h2>
@@ -155,6 +223,27 @@
     <p>
       I also interned at China Central Television (CCTV), where I improved my communication skills and learned how to stay organized and responsive in a fast-paced environment.
     </p>
+
+    <div class="skills-block">
+      <h2>Skills</h2>
+
+      <div class="skills-grid">
+        <span>Excel</span>
+        <span>PowerPoint</span>
+        <span>Word</span>
+        <span>HTML</span>
+        <span>Python</span>
+        <span>Tableau</span>
+        <span>Financial Accounting</span>
+        <span>Adobe</span>
+        <span>Financial Analysis</span>
+        <span>Market Research</span>
+        <span>Data Analysis</span>
+        <span>SPSS</span>
+        <span>Communication</span>
+        <span>Consulting</span>
+      </div>
+    </div>
 
     <div class="back">
       <a href="index.html">← Back to Home</a>
